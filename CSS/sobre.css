@@ -1,0 +1,165 @@
+#conteudo-sobre {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Introdução */
+#intro-sobre {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--primaria) 0%, var(--primaria-clara) 100%);
+  color: white;
+  border-radius: 12px;
+}
+
+#titulo-sobre {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+#descricao-sobre {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Missão */
+#missao {
+  background-color: var(--card-bg);
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#titulo-missao {
+  font-size: 2rem;
+  color: var(--primaria);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#descricao-missao {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--texto-foreground);
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Como Funciona */
+#como-funciona {
+  margin-bottom: 3rem;
+}
+
+#titulo-como-funciona {
+  font-size: 2rem;
+  color: var(--primaria);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#funcionalidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+#funcionalidade-1,
+#funcionalidade-2,
+#funcionalidade-3,
+#funcionalidade-4 {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#funcionalidade-1:hover,
+#funcionalidade-2:hover,
+#funcionalidade-3:hover,
+#funcionalidade-4:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#titulo-funcionalidade-1,
+#titulo-funcionalidade-2,
+#titulo-funcionalidade-3,
+#titulo-funcionalidade-4 {
+  font-size: 1.25rem;
+  color: var(--primaria);
+  margin-bottom: 1rem;
+}
+
+#descricao-funcionalidade-1,
+#descricao-funcionalidade-2,
+#descricao-funcionalidade-3,
+#descricao-funcionalidade-4 {
+  color: var(--texto-foreground);
+  line-height: 1.6;
+}
+
+/* Tecnologias */
+#tecnologias {
+  background-color: var(--card-bg);
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#titulo-tecnologias {
+  font-size: 2rem;
+  color: var(--primaria);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+#lista-tecnologias {
+  max-width: 800px;
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
+}
+
+#tech-1,
+#tech-2,
+#tech-3,
+#tech-4,
+#tech-5,
+#tech-6 {
+  padding: 1rem 0;
+  padding-left: 2rem;
+  position: relative;
+  font-size: 1.125rem;
+  color: var(--texto-foreground);
+  border-bottom: 1px solid var(--border);
+}
+
+#tech-6 {
+  border-bottom: none;
+}
+
+#tech-1::before,
+#tech-2::before,
+#tech-3::before,
+#tech-4::before,
+#tech-5::before,
+#tech-6::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--secundaria);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+
+
