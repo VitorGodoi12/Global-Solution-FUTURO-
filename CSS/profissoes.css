@@ -1,0 +1,251 @@
+#conteudo-profissoes {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Introdução */
+#intro-profissoes {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--primaria) 0%, var(--primaria-clara) 100%);
+  color: white;
+  border-radius: 12px;
+}
+
+#titulo-profissoes {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+#descricao-profissoes {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Lista de Profissões */
+#lista-profissoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+#profissao-1,
+#profissao-2,
+#profissao-3,
+#profissao-4,
+#profissao-5,
+#profissao-6,
+#profissao-7,
+#profissao-8 {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid var(--primaria);
+}
+
+#profissao-1:hover,
+#profissao-2:hover,
+#profissao-3:hover,
+#profissao-4:hover,
+#profissao-5:hover,
+#profissao-6:hover,
+#profissao-7:hover,
+#profissao-8:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#titulo-profissao-1,
+#titulo-profissao-2,
+#titulo-profissao-3,
+#titulo-profissao-4,
+#titulo-profissao-5,
+#titulo-profissao-6,
+#titulo-profissao-7,
+#titulo-profissao-8 {
+  font-size: 1.375rem;
+  color: var(--primaria);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+#descricao-profissao-1,
+#descricao-profissao-2,
+#descricao-profissao-3,
+#descricao-profissao-4,
+#descricao-profissao-5,
+#descricao-profissao-6,
+#descricao-profissao-7,
+#descricao-profissao-8 {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--texto-foreground);
+  margin-bottom: 1.5rem;
+}
+
+#habilidades-profissao-1,
+#habilidades-profissao-2,
+#habilidades-profissao-3,
+#habilidades-profissao-4,
+#habilidades-profissao-5,
+#habilidades-profissao-6,
+#habilidades-profissao-7,
+#habilidades-profissao-8 {
+  background-color: var(--background);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+#habilidades-profissao-1 strong,
+#habilidades-profissao-2 strong,
+#habilidades-profissao-3 strong,
+#habilidades-profissao-4 strong,
+#habilidades-profissao-5 strong,
+#habilidades-profissao-6 strong,
+#habilidades-profissao-7 strong,
+#habilidades-profissao-8 strong {
+  color: var(--foreground);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#habilidades-profissao-1 ul,
+#habilidades-profissao-2 ul,
+#habilidades-profissao-3 ul,
+#habilidades-profissao-4 ul,
+#habilidades-profissao-5 ul,
+#habilidades-profissao-6 ul,
+#habilidades-profissao-7 ul,
+#habilidades-profissao-8 ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+#habilidades-profissao-1 li,
+#habilidades-profissao-2 li,
+#habilidades-profissao-3 li,
+#habilidades-profissao-4 li,
+#habilidades-profissao-5 li,
+#habilidades-profissao-6 li,
+#habilidades-profissao-7 li,
+#habilidades-profissao-8 li {
+  padding: 0.25rem 0;
+  padding-left: 1.25rem;
+  position: relative;
+  color: var(--texto-foreground);
+}
+
+#habilidades-profissao-1 li::before,
+#habilidades-profissao-2 li::before,
+#habilidades-profissao-3 li::before,
+#habilidades-profissao-4 li::before,
+#habilidades-profissao-5 li::before,
+#habilidades-profissao-6 li::before,
+#habilidades-profissao-7 li::before,
+#habilidades-profissao-8 li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--secundaria);
+  font-weight: bold;
+}
+
+/* CTA */
+#cta-profissoes {
+  background: linear-gradient(135deg, var(--secundaria) 0%, var(--secundaria-escura) 100%);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+#titulo-cta-profissoes {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+#descricao-cta-profissoes {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+#btn-cta-profissoes {
+  display: inline-block;
+  background-color: white;
+  color: var(--secundaria-escura);
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.125rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#btn-cta-profissoes:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #titulo-profissoes {
+    font-size: 2rem;
+  }
+
+  #lista-profissoes {
+    grid-template-columns: 1fr;
+  }
+
+  #titulo-cta-profissoes {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #conteudo-profissoes {
+    padding: 1rem;
+  }
+
+  #intro-profissoes {
+    padding: 1.5rem;
+  }
+
+  #titulo-profissoes {
+    font-size: 1.75rem;
+  }
+
+  #descricao-profissoes {
+    font-size: 1rem;
+  }
+
+  #profissao-1,
+  #profissao-2,
+  #profissao-3,
+  #profissao-4,
+  #profissao-5,
+  #profissao-6,
+  #profissao-7,
+  #profissao-8 {
+    padding: 1.5rem;
+  }
+
+  #cta-profissoes {
+    padding: 2rem 1.5rem;
+  }
+
+  #btn-cta-profissoes {
+    padding: 0.875rem 2rem;
+    font-size: 1rem;
+  }
+}
