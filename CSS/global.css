@@ -77,32 +77,6 @@ body {
   padding: 0.5rem;
 }
 
-.hamburguer {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: var(--foreground);
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-.hamburguer::before,
-.hamburguer::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 3px;
-  background-color: var(--foreground);
-  transition: all 0.3s ease;
-}
-
-.hamburguer::before {
-  top: -8px;
-}
-
-.hamburguer::after {
-  top: 8px;
-}
 
 .menu-navegacao {
   display: flex;
