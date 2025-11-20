@@ -162,4 +162,43 @@
 }
 
 
+/* Responsividade */
+@media (max-width: 768px) {
+  #titulo-sobre {
+    font-size: 2rem;
+  }
 
+  #titulo-missao,
+  #titulo-como-funciona,
+  #titulo-tecnologias,
+  #titulo-entregaveis {
+    font-size: 1.75rem;
+  }
+
+  #funcionalidades {
+    grid-template-columns: 1fr;
+  }
+
+  #lista-entregaveis {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  #conteudo-sobre {
+    padding: 1rem;
+  }
+
+  #intro-sobre {
+    padding: 1.5rem;
+  }
+
+  #titulo-sobre {
+    font-size: 1.75rem;
+  }
+
+  #missao,
+  #tecnologias {
+    padding: 2rem 1.5rem;
+  }
+}

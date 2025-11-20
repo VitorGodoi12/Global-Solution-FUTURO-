@@ -177,3 +177,40 @@
 #contato-redes strong {
   color: var(--foreground);
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #titulo-contato {
+    font-size: 2rem;
+  }
+
+  #formulario-contato {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #conteudo-contato {
+    padding: 1rem;
+  }
+
+  #intro-contato {
+    padding: 1rem;
+  }
+
+  #titulo-contato {
+    font-size: 1.75rem;
+  }
+
+  #descricao-contato {
+    font-size: 1rem;
+  }
+
+  #formulario-contato {
+    padding: 1.5rem;
+  }
+
+  #btn-enviar {
+    font-size: 1rem;
+  }
+}

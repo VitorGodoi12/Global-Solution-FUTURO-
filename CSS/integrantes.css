@@ -131,3 +131,51 @@
 #integrante-3-github {
   background-color: var(--texto-foreground);
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #titulo-integrantes {
+    font-size: 2rem;
+  }
+
+  #lista-integrantes {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  #conteudo-integrantes {
+    padding: 1rem;
+  }
+
+  #intro-integrantes {
+    padding: 1rem 0;
+  }
+
+  #titulo-integrantes {
+    font-size: 1.75rem;
+  }
+
+  #descricao-integrantes {
+    font-size: 1.125rem;
+  }
+
+  #integrante-1-foto,
+  #integrante-2-foto,
+  #integrante-3-foto {
+    width: 100px;
+    height: 100px;
+  }
+
+  #avatar-1,
+  #avatar-2,
+  #avatar-3 {
+    font-size: 3rem;
+  }
+
+  #integrante-1-links,
+  #integrante-2-links,
+  #integrante-3-links {
+    flex-direction: column;
+  }
+}
