@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Futuro+ é uma plataforma inteligente que ajuda jovens e trabalhadores a se prepararem para o Futuro do Trabalho">
+    <title>Futuro+ - Plataforma de Orientação Profissional</title>
+    <link rel="stylesheet" href="./CSS/global.css">
+    <link rel="stylesheet" href="./CSS/contato.css">
+</head>
+<body>
+    <header id="header-principal">
+        <nav id="navegacao-principal">
+            <div id="logo-container">
+                <h1 id="logo-texto">Futuro+</h1>
+            </div>
+            <button id="menu-toggle" aria-label="Abrir menu de navegação">
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu-navegacao">
+                <li><a href="Index.html">Início</a></li>
+                <li><a href="integrantes.html">Integrantes</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="profissoes.html">Profissões do Futuro</a></li>
+                <li><a href="trilhas.html">Trilhas de Estudo</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="conteudo-contato">
+        <section id="intro-contato">
+            <h2 id="titulo-contato">Entre em Contato</h2>
+            <p id="descricao-contato">
+                Tem dúvidas, sugestões ou quer saber mais sobre o Futuro+? 
+                Preencha o formulário abaixo e entraremos em contato o mais breve possível.
+            </p>
+        </section>
+
+        <section id="formulario-contato">
+            <form id="form-contato" novalidate>
+                <div id="campo-nome">
+                    <label for="nome" id="label-nome">Nome Completo *</label>
+                    <input 
+                        type="text" 
+                        id="nome" 
+                        name="nome" 
+                        required 
+                        placeholder="Digite seu nome completo"
+                        aria-required="true"
+                    >
+                    <span id="erro-nome"></span>
+                </div>
+
+                <div id="campo-email">
+                    <label for="email" id="label-email">E-mail *</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        required 
+                        placeholder="seu@email.com"
+                        aria-required="true"
+                    >
+                    <span id="erro-email"></span>
+                </div>
+
+                <div id="campo-telefone">
+                    <label for="telefone" id="label-telefone">Telefone</label>
+                    <input 
+                        type="tel" 
+                        id="telefone" 
+                        name="telefone" 
+                        placeholder="(11) 98765-4321"
+                    >
+                    <span id="erro-telefone"></span>
+                </div>
+
+                <div id="campo-assunto">
+                    <label for="assunto" id="label-assunto">Assunto *</label>
+                    <select id="assunto" name="assunto" required aria-required="true">
+                        <option value="">Selecione um assunto</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="parceria">Parceria</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    <span id="erro-assunto"></span>
+                </div>
+
+                <div id="campo-mensagem">
+                    <label for="mensagem" id="label-mensagem">Mensagem *</label>
+                    <textarea 
+                        id="mensagem" 
+                        name="mensagem" 
+                        rows="6" 
+                        required 
+                        placeholder="Digite sua mensagem aqui..."
+                        aria-required="true"
+                    ></textarea>
+                    <span id="erro-mensagem"></span>
+                </div>
+
+                <div id="campo-submit">
+                    <button type="submit" id="btn-enviar">Enviar Mensagem</button>
+                </div>
+
+                <div id="mensagem-sucesso" style="display: none;">
+                    <p>✓ Mensagem enviada com sucesso! Entraremos em contato em breve.</p>
+                </div>
+            </form>
+        </section>
+
+        <section id="info-adicional">
+            <h3 id="titulo-info-adicional">Outras formas de contato</h3>
+            <div id="contatos-alternativos">
+                <div id="contato-email-direto">
+                    <strong>E-mail:</strong> contato@futuroplus.com.br
+                </div>
+                <div id="contato-redes">
+                    <strong>Redes Sociais:</strong> @futuroplus
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
