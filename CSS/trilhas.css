@@ -1,0 +1,224 @@
+#conteudo-trilhas {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Introdução */
+#intro-trilhas {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--primaria) 0%, var(--primaria-clara) 100%);
+  color: white;
+  border-radius: 12px;
+}
+
+#titulo-trilhas {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+#descricao-trilhas {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Lista de Trilhas */
+#lista-trilhas {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+#trilha-1,
+#trilha-2,
+#trilha-3,
+#trilha-4,
+#trilha-5,
+#trilha-6 {
+  background-color: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 6px solid var(--primaria);
+}
+
+#trilha-1:hover,
+#trilha-2:hover,
+#trilha-3:hover,
+#trilha-4:hover,
+#trilha-5:hover,
+#trilha-6:hover {
+  transform: translateX(5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#trilha-1-header,
+#trilha-2-header,
+#trilha-3-header,
+#trilha-4-header,
+#trilha-5-header,
+#trilha-6-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#titulo-trilha-1,
+#titulo-trilha-2,
+#titulo-trilha-3,
+#titulo-trilha-4,
+#titulo-trilha-5,
+#titulo-trilha-6 {
+  font-size: 1.5rem;
+  color: var(--primaria);
+  font-weight: bold;
+  margin: 0;
+}
+
+#nivel-trilha-1,
+#nivel-trilha-2,
+#nivel-trilha-3,
+#nivel-trilha-4,
+#nivel-trilha-5,
+#nivel-trilha-6 {
+  background-color: var(--secundaria);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+#descricao-trilha-1,
+#descricao-trilha-2,
+#descricao-trilha-3,
+#descricao-trilha-4,
+#descricao-trilha-5,
+#descricao-trilha-6 {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--texto-foreground);
+  margin-bottom: 1.5rem;
+}
+
+#modulos-trilha-1,
+#modulos-trilha-2,
+#modulos-trilha-3,
+#modulos-trilha-4,
+#modulos-trilha-5,
+#modulos-trilha-6 {
+  background-color: var(--background);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+#modulos-trilha-1 h4,
+#modulos-trilha-2 h4,
+#modulos-trilha-3 h4,
+#modulos-trilha-4 h4,
+#modulos-trilha-5 h4,
+#modulos-trilha-6 h4 {
+  color: var(--foreground);
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+}
+
+#modulos-trilha-1 ol,
+#modulos-trilha-2 ol,
+#modulos-trilha-3 ol,
+#modulos-trilha-4 ol,
+#modulos-trilha-5 ol,
+#modulos-trilha-6 ol {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+#modulos-trilha-1 li,
+#modulos-trilha-2 li,
+#modulos-trilha-3 li,
+#modulos-trilha-4 li,
+#modulos-trilha-5 li,
+#modulos-trilha-6 li {
+  padding: 0.5rem 0;
+  color: var(--texto-foreground);
+  line-height: 1.6;
+}
+
+#modulos-trilha-1 li strong,
+#modulos-trilha-2 li strong,
+#modulos-trilha-3 li strong,
+#modulos-trilha-4 li strong,
+#modulos-trilha-5 li strong,
+#modulos-trilha-6 li strong {
+  color: var(--foreground);
+}
+
+#duracao-trilha-1,
+#duracao-trilha-2,
+#duracao-trilha-3,
+#duracao-trilha-4,
+#duracao-trilha-5,
+#duracao-trilha-6 {
+  color: var(--texto-foreground);
+  font-size: 1rem;
+}
+
+#duracao-trilha-1 strong,
+#duracao-trilha-2 strong,
+#duracao-trilha-3 strong,
+#duracao-trilha-4 strong,
+#duracao-trilha-5 strong,
+#duracao-trilha-6 strong {
+  color: var(--foreground);
+}
+
+/* CTA */
+#cta-trilhas {
+  background: linear-gradient(135deg, var(--secundaria) 0%, var(--secundaria-escura) 100%);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+#titulo-cta-trilhas {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+#descricao-cta-trilhas {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+#btn-cta-trilhas {
+  display: inline-block;
+  background-color: white;
+  color: var(--secundaria-escura);
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.125rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#btn-cta-trilhas:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
