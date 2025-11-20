@@ -1,60 +1,97 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futuro+ - Prepare-se para o Futuro do Trabalho</title>
-    <link rel="stylesheet" href="./CSS/style.css">
+    <meta name="description" content="Futuro+ é uma plataforma inteligente que ajuda jovens e trabalhadores a se prepararem para o Futuro do Trabalho">
+    <title>Futuro+ - Plataforma de Orientação Profissional</title>
+    <link rel="stylesheet" href="./CSS/global.css">
+    <link rel="stylesheet" href="./CSS/index.css">
 </head>
 <body>
-  <header>
-    <div class="header-container">
-      <a href="./Index.html" class="logo">Futuro+</a>
-      
-      
-      <nav>
-        <a href="./Index.html">Home</a>
-        <a href="./Paginas/integrantes.html">Integrantes</a>
-        <a href="./Paginas/sobre.html">Sobre</a>
-        <a href="./Paginas/profissoes.html">Profissões</a>
-        <a href="./Paginas/trilhas.html">Trilhas</a>
-        <a href="./Paginas/faq.html">FAQ</a>
-        <a href="./Paginas/contato.html">Contato</a>
-      </nav>
-    </div>
-  </header>
+    <header id="header-principal">
+        <nav id="navegacao-principal">
+            <div id="logo-container">
+                <h1 id="logo-texto">Futuro+</h1>
+            </div>
+            <button id="menu-toggle" aria-label="Abrir menu de navegação">
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu-navegacao">
+                <li><a href="Index.html">Início</a></li>
+                <li><a href="integrantes.html">Integrantes</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="profissoes.html">Profissões do Futuro</a></li>
+                <li><a href="trilhas.html">Trilhas de Estudo</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  
-  <main>
-    <section class="primeira">
-      <div class="container">
-        <h1>Solução Proposta "Futuro+"</h1>
-        <p>Uma plataforma inteligente que ajuda jovens e trabalhadores a se prepararem para o <strong>Futuro do Trabalho</strong>.</p>
-        <p>Ela combina <strong>IA, dados, educação e tecnologia</strong> para:</p>
-      </div>
-    </section>
+    <main id="conteudo-principal">
+        <section id="hero">
+            <div id="hero-conteudo">
+                <h2 id="hero-titulo">Solução Proposta – "Futuro+"</h2>
+                <p id="hero-descricao">
+                    <strong>Futuro+</strong> é uma plataforma inteligente que ajuda jovens e trabalhadores a se prepararem para o <strong>Futuro do Trabalho</strong>.
+                </p>
+                <p id="hero-subtitulo">
+                    Ela combina <strong>IA, dados, educação e tecnologia</strong> para:
+                </p>
+                <ul id="hero-lista">
+                    <li>Recomendar <strong>profissões do futuro</strong></li>
+                    <li>Indicar <strong>trilhas de estudo</strong> de acordo com o perfil do usuário</li>
+                    <li>Orientar sobre <strong>habilidades necessárias</strong> para o mercado até 2030</li>
+                    <li>Apoiar pessoas que precisam de <strong>reskilling</strong> (aprender algo novo) e <strong>upskilling</strong> (melhorar o que já sabem)</li>
+                    <li>Democratizar o acesso à informação sobre trabalho e carreira</li>
+                </ul>
+            </div>
+        </section>
 
-    <section class="container">
-      <div class="cards-grid">
-        <div class="card">
-          <h3>🎯 Recomendações</h3>
-          <p>Recomenda profissões do futuro com base no perfil do usuário</p>
-        </div>
-        <div class="card">
-          <h3>📚 Trilhas de Estudo</h3>
-          <p>Indica trilhas de estudo de acordo com o perfil do usuário</p>
-        </div>
-        <div class="card">
-          <h3>💡 Habilidades</h3>
-          <p>Orienta sobre habilidades necessárias para o mercado até 2030</p>
-        </div>
-        <div class="card">
-          <h3>🚀 Reskilling</h3>
-          <p>Apoia pessoas que precisam de reskilling e upskilling</p>
-        </div>
-      </div>
-    </section>
+        <section id="ods">
+            <h2 id="ods-titulo">Conexão com os ODS da ONU</h2>
+            <p id="ods-descricao">A plataforma se conecta aos <strong>ODS</strong> da ONU, especialmente:</p>
+            <div id="ods-cards">
+                <article id="ods-card-4">
+                    <h3>✓ ODS 4 – Educação de Qualidade</h3>
+                    <p>Promovemos educação acessível e de qualidade para todos.</p>
+                </article>
+                <article id="ods-card-8">
+                    <h3>✓ ODS 8 – Trabalho Decente e Crescimento Econômico</h3>
+                    <p>Apoiamos o desenvolvimento de habilidades para trabalho digno e crescimento sustentável.</p>
+                </article>
+            </div>
+        </section>
 
-   
+        <section id="solucao">
+            <h2 id="solucao-titulo">A solução será apresentada através de:</h2>
+            <ul id="solucao-lista">
+                <li>Um <strong>chatbot inteligente</strong> que conversa com o usuário</li>
+                <li>Um <strong>site responsivo</strong> explicando carreiras e estudos</li>
+                <li>Um <strong>sistema Java</strong> simulando lógica da plataforma</li>
+                <li>Um <strong>banco de dados relacional</strong> armazenando usuários, cursos e profissões</li>
+                <li>Um <strong>programa Python</strong> realizando análises simples</li>
+                <li>Documentação + backlog para explicar o funcionamento do projeto</li>
+            </ul>
+        </section>
+
+        <section id="cta">
+            <h2 id="cta-titulo">Comece sua jornada profissional agora!</h2>
+            <p id="cta-descricao">Explore as funcionalidades da plataforma e descubra seu futuro.</p>
+            <a href="./pages/profissoes.html" id="cta-botao">Ver Profissões do Futuro</a>
+        </section>
+    </main>
+
+    <footer id="rodape">
+        <p id="rodape-texto">&copy; 2024 Futuro+ | Plataforma de Orientação Profissional</p>
+        <nav id="rodape-navegacao">
+            <a href="./pages/sobre.html">Sobre</a>
+            <a href="./pages/contato.html">Contato</a>
+            <a href="./pages/faq.html">FAQ</a>
+        </nav>
+    </footer>
+
+    <script src="./scripts/menu.js"></script>
 </body>
 </html>

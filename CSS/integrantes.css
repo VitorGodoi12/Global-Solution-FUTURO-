@@ -1,0 +1,133 @@
+#conteudo-integrantes {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Introdução */
+#intro-integrantes {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+}
+
+#titulo-integrantes {
+  font-size: 2.5rem;
+  color: var(--primaria);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+#descricao-integrantes {
+  font-size: 1.25rem;
+  color: var(--texto-foreground);
+}
+
+/* Lista de Integrantes */
+#lista-integrantes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+#integrante-1,
+#integrante-2,
+#integrante-3 {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#integrante-1:hover,
+#integrante-2:hover,
+#integrante-3:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+#integrante-1-foto,
+#integrante-2-foto,
+#integrante-3-foto {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 0.3rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primaria) 0%, var(--primaria-clara) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+}
+
+#avatar-1,
+#avatar-2,
+#avatar-3 {
+  font-size: 4rem;
+}
+
+#integrante-1-nome,
+#integrante-2-nome,
+#integrante-3-nome {
+  font-size: 1.5rem;
+  color: var(--foreground);
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+#integrante-1-rm,
+#integrante-2-rm,
+#integrante-3-rm {
+  font-size: 1rem;
+  color: var(--texto-foreground);
+  margin-bottom: 1.5rem;
+}
+
+#integrante-1-links,
+#integrante-2-links,
+#integrante-3-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+#integrante-1-linkedin,
+#integrante-1-github,
+#integrante-2-linkedin,
+#integrante-2-github,
+#integrante-3-linkedin,
+#integrante-3-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primaria);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#integrante-1-linkedin:hover,
+#integrante-2-linkedin:hover,
+#integrante-3-linkedin:hover {
+  background-color: var(--primaria-escura);
+  transform: translateY(-2px);
+}
+
+#integrante-1-github:hover,
+#integrante-2-github:hover,
+#integrante-3-github:hover {
+  background-color: var(--foreground);
+  transform: translateY(-2px);
+}
+
+#integrante-1-github,
+#integrante-2-github,
+#integrante-3-github {
+  background-color: var(--texto-foreground);
+}
